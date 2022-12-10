@@ -1,0 +1,9 @@
+.root {
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.title {
+    width: 300px;
+}
