@@ -1,0 +1,28 @@
+.root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.modal {
+    margin: 100px auto 0;
+    width: 400px;
+    overflow: hidden;
+    z-index: 100;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.modalDialog {
+    display: block;
+    margin: 100px auto;
+    width: 500px;
+
+
+
+}
