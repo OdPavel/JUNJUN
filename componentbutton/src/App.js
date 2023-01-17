@@ -7,32 +7,22 @@ import Component from "./components/components/Component";
 function App() {
     const [arr, setArr] = React.useState([])
 
-    const addButton = (e) => {
-        console.log(e.target.value)
+    const buttonHandler = (arg) => {
         const newObg = {
-            numb: arr.length === 0 ? 1 : arr.at(-1).numb + 1,
+            numb: arr.length === 0 ? 1 : arr.at(-1).numb + arg,
             id: uuidv4()
         }
         setArr([...arr, newObg])
     }
 
-
-    const buttonMinus = () => {
-        const newObg = {
-            numb: arr.length === 0 ? 1 : arr.at(-1).numb - 1,
-            id: uuidv4()
-        }
-        setArr([...arr, newObg])
-    }
-
-    const removeButton = (id) =>{
-        setArr(arr.filter((item)=> item.id !== id))
+    const removeButton = (id) => {
+        setArr(arr.filter((item) => item.id !== id))
     }
 
     return (
         <div className='App'>
             <div className="btn-group font-monospace" role="group">
-                <Button onClickAdd={addButton} inc={'+'} onClickPutAway={buttonMinus} dec={'-'}/>
+                <Button onClick={buttonHandler} inc={'+'} dec={'-'}/>
             </div>
             <Component onClickRemove={removeButton} arr={arr}/>
         </div>
