@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.posts{
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid burlywood;
+    border-radius: 5px;
+background-color: #e1e0db;
+}
+li{
+    list-style: none;
+}
