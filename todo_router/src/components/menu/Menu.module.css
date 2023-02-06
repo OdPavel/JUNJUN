@@ -1,0 +1,11 @@
+.nav {
+  background-color: darkslategray;
+  padding: 5px;
+  text-align: center;
+}
+
+nav a {
+  margin: 15px;
+  color: lightblue;
+  font-size: 35px;
+}
